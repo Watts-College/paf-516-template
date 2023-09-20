@@ -10,8 +10,8 @@ description:        Community modeling course.
 
 # Site subpath, e.g. /blog
 url :               "https://watts-college.github.io"
-baseurl:            "/cpp-529-template"
-course_url:         "https://watts-college.github.io/cpp-529-template/"
+baseurl:            "/paf-516-template"
+course_url:         "https://watts-college.github.io/paf-516-template/"
 
 # Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
 permalink:          /:title/
@@ -41,7 +41,7 @@ header:
 - title: Yellowdig
   url: https://canvas.asu.edu/courses/100958/assignments/2610856
 # - title: Canvas
-#  url: https://canvas.asu.edu/courses/100958
+#  url: https://canvas.asu.edu/courses/168313
 - title: Office Hours
   url: office-hours/
 - title: Get Help
@@ -57,8 +57,8 @@ author:
 github_info:
     username:          watts-college # Github location of the course
     branch:            master
-    website-repo:      cpp-529-template
-    course-repo:       cpp-529-template
+    website-repo:      paf-516-template
+    course-repo:       paf-516-template
 
 # Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
 authors:
