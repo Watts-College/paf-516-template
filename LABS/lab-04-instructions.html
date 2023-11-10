@@ -263,7 +263,7 @@ summary {
 <li><a href="#data-source">Data Source</a></li>
 </ul></li>
 <li><a href="#build-your-rodeo-dataset">Build Your Rodeo Dataset</a><ul>
-<li><a href="#step-1-select-your-msa">Step 1: Select Your MSA</a></li>
+<li><a href="#step-1-select-your-msa">Step 1: Select San Diego</a></li>
 <li><a href="#step-2-download-a-shapefile-with-population-data">Step 2: Download a Shapefile with Population Data</a></li>
 <li><a href="#step-3-add-census-data">Step 3: Add Census Data</a></li>
 <li><a href="#step-4-transform-the-shapefile-into-a-dorling-cartogram">Step 4: Transform the Shapefile into A Dorling Cartogram</a></li>
@@ -282,7 +282,7 @@ summary {
 </ul>
 </div>
 
-<p>This lab will have you replicate the work you did for the previous lab, but instead of using the Phoenix data you will select a city of your choice to use for this lab, subsequent labs, and the final project.</p>
+<p>This lab will have you replicate the work you did for the previous lab, but instead of using the Phoenix data you will select San Diego to use for this lab, and the final project.</p>
 <p>You want to select a dense city that has a lot of census tracts, so I suggest you select from the 50 largest cities in the US. The Census defines Metropolitan Statistical Areas (MSAs) as “one or more adjacent counties or county equivalents that have at least one urban core area of at least 50,000 population, plus adjacent territory that has a high degree of social and economic integration with the core as measured by commuting ties.” There are currently 384 MSAs in the US.</p>
 <p>Wikipedia provides a convenient <a href="https://en.wikipedia.org/wiki/List_of_metropolitan_statistical_areas">list of MSAs sorted by size</a>.</p>
 <div id="packages" class="section level1">
@@ -321,8 +321,7 @@ summary {
 <p>At this point you are ready to start clustering census tracts.</p>
 <p>I will demonstrate the code that you will use for the lab using Minneapolis. You will need to adapt it for your own city.</p>
 <div id="step-1-select-your-msa" class="section level2">
-<h2>Step 1: Select Your MSA</h2>
-<p>You can select a city from the list of <a href="https://en.wikipedia.org/wiki/List_of_metropolitan_statistical_areas">large MSAs</a>.</p>
+<h2>Step 1: Select San Diego</h2>
 <p>To get Census data on the city you will first need to identify all of the counties that comprise the MSA. You can look this information up through MSA to FIPS crosswalks provided by the National Bureau for Economic Research (NBER): <a href="https://www.nber.org/data/cbsa-fips-county-crosswalk.html" class="uri">https://www.nber.org/data/cbsa-fips-county-crosswalk.html</a></p>
 <p>I have added the file to GitHub for ease of access.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>crosswalk &lt;-<span class="st"> </span><span class="kw">read.csv</span>( <span class="st">&quot;https://raw.githubusercontent.com/DS4PS/cpp-529-master/master/data/cbsatocountycrosswalk.csv&quot;</span>,  <span class="dt">stringsAsFactors=</span>F, <span class="dt">colClasses=</span><span class="st">&quot;character&quot;</span> )</span>
