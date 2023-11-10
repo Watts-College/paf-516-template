@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo=T, fig.width=10, fig.height=8, warning=F, message=F )
 ```
 
 
-This lab will have you replicate the work you did for the previous lab, but instead of using the Phoenix data you will select a city of your choice to use for this lab, subsequent labs, and the final project. 
+This lab will have you replicate the work you did for the previous lab, but instead of using the Phoenix data you will select San Diego to use for this lab, and the final project. 
 
 You want to select a dense city that has a lot of census tracts, so I suggest you select from the 50 largest cities in the US. The Census defines Metropolitan Statistical Areas (MSAs) as "one or more adjacent counties or county equivalents that have at least one urban core area of at least 50,000 population, plus adjacent territory that has a high degree of social and economic integration with the core as measured by commuting ties." There are currently 384 MSAs in the US. 
 
@@ -68,9 +68,7 @@ At this point you are ready to start clustering census tracts.
 I will demonstrate the code that you will use for the lab using Minneapolis. You will need to adapt it for your own city. 
 
 
-## Step 1: Select Your MSA
-
-You can select a city from the list of [large MSAs](https://en.wikipedia.org/wiki/List_of_metropolitan_statistical_areas). 
+## Step 1: Select San Diego
 
 To get Census data on the city you will first need to identify all of the counties that comprise the MSA. You can look this information up through MSA to FIPS crosswalks provided by the National Bureau for Economic Research (NBER):  https://www.nber.org/data/cbsa-fips-county-crosswalk.html 
 
